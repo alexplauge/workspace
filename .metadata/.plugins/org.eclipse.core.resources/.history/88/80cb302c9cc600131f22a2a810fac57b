@@ -1,0 +1,14 @@
+package practice;
+import java.util.*;
+public class PracticeClass {
+
+	
+	
+	public static void main(String []args) {
+		int a = 0, b = 0, c = 0;
+		Scanner keyboard = new Scanner(System.in);
+		a = (int) (Math.random() * 50);
+		System.out.println(a);
+	}
+		
+}

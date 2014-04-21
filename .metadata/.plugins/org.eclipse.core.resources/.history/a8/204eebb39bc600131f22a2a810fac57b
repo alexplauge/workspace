@@ -1,0 +1,19 @@
+package practice;
+import java.util.*;
+public class PracticeClass {
+
+	
+	
+	public static void main(String []args) {
+		double a = 0, b = 0;
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Find the average of two numbers!");
+		System.out.print("Enter number one: ");
+		a = keyboard.nextDouble();
+		System.out.print("Enter number two: ");
+		b = keyboard.nextDouble();
+		System.out.println("The average of those two numbers is: " + (a+b)/2 );
+
+	}
+		
+}

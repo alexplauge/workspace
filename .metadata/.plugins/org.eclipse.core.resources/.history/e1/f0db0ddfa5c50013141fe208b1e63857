@@ -1,0 +1,20 @@
+package practice;
+import java.util.*;
+public class PracticeClass {
+
+	
+	
+	public static void main(String []args) {
+		int x;
+		double y,c;
+		Scanner keyboard = new Scanner(System.in);
+		//todo: From Celsius or Fahrenheit
+		System.out.print("Enter temperature in Celsius: ");
+		x=keyboard.nextInt();
+		c = 9/5;
+		y = 32+c*x;
+		System.out.print("The temperature in Fahrenheit is: ");
+		System.out.println(y);
+	}
+		
+}

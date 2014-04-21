@@ -1,0 +1,12 @@
+package practice;
+import java.util.*;
+public class PracticeClass {
+
+	
+	
+	public static void main(String []args) {
+		
+
+	}
+		
+}
