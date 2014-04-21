@@ -1,0 +1,43 @@
+package practice;
+import java.util.*;
+public class RanMath {
+	public static void main(String arg[]) {
+		Scanner sc = new Scanner(System.in);
+		String cont = "0";
+		do {
+			String op = "0";
+			int usrans = 0;
+			int ans = 0;
+			Random number = new Random();
+			int nOne = number.nextInt(100) + 1;
+			int nTwo = number.nextInt(100) + 1;
+			Random opGen = new Random();
+			int opChoice = opGen.nextInt(3);
+			switch (opChoice) {
+			case 0:
+				op = "+";
+				ans = nOne + nTwo;
+				break;
+			case 1:
+				op = "-";
+				ans = nOne - nTwo;
+				break;
+			case 2:
+				op = "*";
+				ans = nOne * nTwo;
+				break;
+			}
+			System.out.print("What is "  + nOne + op + nTwo + " = ");
+			usrans = sc.nextInt();
+			if (usrans != ans) {
+				System.out.println("That's incorrect!");
+				System.out.println("The correct answer is " + ans);
+			}else{
+				System.out.println("That's correct!");
+			}
+			System.out.print("Continue? (y/n): ");
+			cont = sc.next();
+		}while(cont.equals("y"));
+		sc.close();
+	}
+}
